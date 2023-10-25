@@ -1,15 +1,33 @@
 import style from "./style.module.css";
+import hero_logo from "./assets/logo.svg";
 
 const App = () => {
   return(
     <div className={style.app_container}>
-  About
-  Careers
-  Events
-  Products
-  Support
+      <header className={style.header_container}>
+        <div className={style.header_content}>
+          <nav className={style.navbar_container}>
+            <img className={style.hero_logo} src={hero_logo} alt="logo" />
+            <ul className={style.hero_nav_list}>
+              <li className={style.hero_nav_item}>About</li>
+              <li className={style.hero_nav_item}>Careers</li>
+              <li className={style.hero_nav_item}>Events</li>
+              <li className={style.hero_nav_item}>Products</li>
+              <li className={style.hero_nav_item}>Support</li>
+            </ul>
+          </nav>
+          <div className={style.h1_container}>
+            <div className={style.h1_board}>
+              <h1 className={style.hero_title}>Immersive experiences that deliver</h1>
+            </div>
 
-  Immersive experiences that deliver
+          </div>
+        </div>
+
+      </header>
+
+
+
 
   The leader in interactive VR
 

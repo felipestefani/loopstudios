@@ -1,5 +1,6 @@
 import style from "./style.module.css";
 import hero_logo from "./assets/logo.svg";
+import interactive from "./assets/desktop/image-interactive.jpg";
 
 const App = () => {
   return(
@@ -17,14 +18,15 @@ const App = () => {
             </ul>
           </nav>
           <div className={style.h1_container}>
-            <div className={style.h1_board}>
-              <h1 className={style.hero_title}>Immersive experiences that deliver</h1>
-            </div>
-
+            <h1 className={style.hero_title}>Immersive experiences that deliver</h1>
           </div>
         </div>
-
       </header>
+      <section className={style.info_container}>
+        <div className={style.info_content}>
+          <img src={interactive} alt="a man in blue t-shirt using a vr glass" />
+        </div>
+      </section>
 
 
 

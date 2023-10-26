@@ -50,13 +50,6 @@
   margin-bottom: 9.13rem;
 }
 
-.h1_board {
-  border: 2px solid #FFF;
-  /* padding: 2.5rem; */
-  display: flex;
-  flex-basis: 40.625rem;
-}
-
 .hero_title {
   color: #FFF;
   font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
@@ -65,5 +58,20 @@
   font-weight: 300;
   line-height: 4.375rem; 
   text-transform: uppercase;
+  flex-basis: 40.625rem;
+  border: 2px solid #FFF;
+  padding: 2.5rem;
+  padding-bottom: calc(2.5rem - 0.8rem);
+}
 
+.info_container {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  padding-top: 10rem;
+}
+
+.info_content {
+  flex-basis: 1110px;
+  border: 2px solid blue;
 }

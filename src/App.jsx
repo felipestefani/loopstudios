@@ -23,46 +23,60 @@ const App = () => {
         </div>
       </header>
       <section className={style.info_container}>
-        <div className={style.info_content}>
-          <img src={interactive} alt="a man in blue t-shirt using a vr glass" />
-        </div>
+        <div className={style.info_flex_container}>
+          <div className={style.info_img_content}>
+            <img src={interactive} alt="a man in blue t-shirt using a vr glass" />
+          </div>
+          <div className={style.info_text_content}>
+            <h2>The leader in interactive VR</h2>
+            <p>Founded in 2011, Loopstudios has been producing world-class virtual reality 
+            projects for some of the best companies around the globe. Our award-winning 
+            creations have transformed businesses through digital experiences that bind 
+            to their brand.</p>
+          </div>
+        </div>   
       </section>
+      <section className={style.creations_container}>
+        <div className={style.creations_flex_container}>
+          <div>
+            <h2>Our creations</h2>
+            <button>See all</button>
+          </div>
+          <div>
+          Deep earth
+          Night arcade
+          Soccer team VR
+          The grid
+          From up above VR
+          Pocket borealis
+          The curiosity
+          Make it fisheye
+          </div>
+        </div>
+        <footer>
+          <div>
+            <div>
 
-
-
-
-  The leader in interactive VR
-
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
-
-  Our creations
-
-  See all
-
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
-
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  © 2021 Loopstudios. All rights reserved.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+            </div>
+            <div>
+              <ul>
+                <li>About</li>
+                <li>Careers</li>
+                <li>Events</li>
+                <li>Products</li>
+                <li>Support</li>
+              </ul>
+              <div>
+                © 2021 Loopstudios. All rights reserved.
+              </div>
+            </div>
+          </div>
+          <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="#">Your Name Here</a>.
+          </div>
+        </footer>
+      </section>
     </div>
   )
 }

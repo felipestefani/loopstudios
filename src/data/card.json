@@ -1,7 +1,7 @@
 [
     {
         "name": "Deep earth",
-        "url": "./assets/desktop/image-deep-earth.jpg",
+        "url": "src/assets/desktop/image-deep-earth.jpg",
         "id": "1"
     },
     {

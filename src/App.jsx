@@ -1,21 +1,20 @@
 import style from "./style.module.css";
 import hero_logo from "./assets/logo.svg";
 import interactive from "./assets/desktop/image-interactive.jpg";
+import Menu from "./components/Menu";
+import SocialMedia from "./components/SocialMedia";
+import cardList from './data/card.json';
+import Card from "./components/Card";
 
 const App = () => {
+
   return(
     <div className={style.app_container}>
       <header className={style.header_container}>
         <div className={style.header_content}>
           <nav className={style.navbar_container}>
             <img className={style.hero_logo} src={hero_logo} alt="logo" />
-            <ul className={style.hero_nav_list}>
-              <li className={style.hero_nav_item}>About</li>
-              <li className={style.hero_nav_item}>Careers</li>
-              <li className={style.hero_nav_item}>Events</li>
-              <li className={style.hero_nav_item}>Products</li>
-              <li className={style.hero_nav_item}>Support</li>
-            </ul>
+            <Menu />
           </nav>
           <div className={style.h1_container}>
             <h1 className={style.hero_title}>Immersive experiences that deliver</h1>
@@ -38,45 +37,36 @@ const App = () => {
       </section>
       <section className={style.creations_container}>
         <div className={style.creations_flex_container}>
-          <div>
-            <h2>Our creations</h2>
-            <button>See all</button>
+          <div className={style.creations_header_container}>
+            <h2 className={style.creation_title}>Our creations</h2>
+            <button className={style.button}>See all</button>
           </div>
-          <div>
-          Deep earth
-          Night arcade
-          Soccer team VR
-          The grid
-          From up above VR
-          Pocket borealis
-          The curiosity
-          Make it fisheye
+          <div className={style.cards_container}>
+            {cardList.map( card => (
+              <Card key={card.id} name={card.name} url={card.url} id={card.id}/>
+            ))}
+            <img src={'./assets/desktop/image-curiosity.jpg'} alt="" />
           </div>
         </div>
-        <footer>
-          <div>
-            <div>
-
+      </section>
+      <footer>
+          <div className={style.footer_flex_container}>
+            <div className={style.social_media_container}>
+              <img className={style.footer_logo} src={hero_logo} alt="logo" />
+              <SocialMedia />
             </div>
-            <div>
-              <ul>
-                <li>About</li>
-                <li>Careers</li>
-                <li>Events</li>
-                <li>Products</li>
-                <li>Support</li>
-              </ul>
-              <div>
+            <div className={style.footer_menu}>
+              <Menu />
+              <div className={style.brand_rights}>
                 © 2021 Loopstudios. All rights reserved.
               </div>
             </div>
-          </div>
-          <div class="attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-            Coded by <a href="#">Your Name Here</a>.
-          </div>
+            <div className={style.attribution}>
+              Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+              Coded by <a href="#">Your Name Here</a>.
+            </div>
+          </div> 
         </footer>
-      </section>
     </div>
   )
 }

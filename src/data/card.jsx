@@ -1,17 +1,19 @@
-[
+import deep from "../assets/desktop/image-deep-earth.jpg";
+
+const cardList = [
     {
         "name": "Deep earth",
-        "url": "src/assets/desktop/image-deep-earth.jpg",
-        "id": "1"
+        "url": deep,
+        "id": 1
     },
     {
         "name": "Night arcade",
-        "url": "./assets/desktop/night-arcade.jpg",
+        "url": "./assets/desktop/image-night-arcade.jpg",
         "id": "2"
     },
     {
         "name": "Soccer team vr",
-        "url": "./assets/desktop/soccer-team.jpg",
+        "url": "./assets/desktop/image-soccer-team.jpg",
         "id": "3"
     },
     {
@@ -40,3 +42,5 @@
         "id": "8"
     }
 ]
+
+export default cardList

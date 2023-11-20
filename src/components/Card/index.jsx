@@ -2,7 +2,9 @@ import style from './style.module.css'
 
 const Card = (props) => {
 
-   const { url, name } = props
+   const { url, name, id } = props
+
+   console.log(typeof(id));
 
     return (
         <div className={style.card_container}>

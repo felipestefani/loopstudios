@@ -3,7 +3,7 @@ import hero_logo from "./assets/logo.svg";
 import interactive from "./assets/desktop/image-interactive.jpg";
 import Menu from "./components/Menu";
 import SocialMedia from "./components/SocialMedia";
-import cardList from './data/card.json';
+import cardList from './data/card';
 import Card from "./components/Card";
 
 const App = () => {

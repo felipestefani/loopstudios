@@ -3,6 +3,14 @@
     gap: 2rem;
     list-style: none;
   }
+
+  .menu_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
   
   .hero_nav_item {
     color: #FFF;
@@ -11,4 +19,16 @@
     font-style: normal;
     font-weight: 400;
     line-height: 1.5625rem;
+  }
+
+  .hero_nav_item:hover {
+    cursor: pointer;
+  }
+
+  .underline {
+    position: absolute;
+    width: 40%;
+    height: 0.1rem;
+    bottom: -0.4rem;
+    background-color: #FFF;
   }

@@ -1,4 +1,11 @@
 import deep from "../assets/desktop/image-deep-earth.jpg";
+import night from "../assets/desktop/image-night-arcade.jpg";
+import soccer from "../assets/desktop/image-soccer-team.jpg";
+import grid from "../assets/desktop/image-grid.jpg";
+import above from "../assets/desktop/image-from-above.jpg";
+import borealis from "../assets/desktop/image-pocket-borealis.jpg";
+import curiosity from "../assets/desktop/image-curiosity.jpg";
+import fisheye from "../assets/desktop/image-fisheye.jpg";
 
 const cardList = [
     {
@@ -8,37 +15,37 @@ const cardList = [
     },
     {
         "name": "Night arcade",
-        "url": "./assets/desktop/image-night-arcade.jpg",
+        "url": night,
         "id": "2"
     },
     {
         "name": "Soccer team vr",
-        "url": "./assets/desktop/image-soccer-team.jpg",
+        "url": soccer,
         "id": "3"
     },
     {
         "name": "The grid",
-        "url": "./assets/desktop/image-grid.jpg",
-        "id": "4"
+        "url": grid,
+        "id": "meu4"
     },
     {
         "name": "From up above VR",
-        "url": "./assets/desktop/image-from-above.jpg",
-        "id": "5"
+        "url": above,
+        "id": "meu5"
     },
     {
         "name": "Pocket borealis",
-        "url": "./assets/desktop/image-pocket-borealis.jpg",
+        "url": borealis,
         "id": "6"
     },
     {
         "name": "The curiosity",
-        "url": "./assets/desktop/image-curiosity.jpg",
+        "url": curiosity,
         "id": "7"
     },
     {
         "name": "Make it fisheye",
-        "url": "./assets/desktop/image-fisheye.jpg",
+        "url": fisheye,
         "id": "8"
     }
 ]

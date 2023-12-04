@@ -18,8 +18,9 @@ const App = () => {
           </nav>
           <div className={style.h1_container}>
             <h1 className={style.hero_title}>Immersive experiences that deliver</h1>
-          </div>
+          </div>  
         </div>
+        <div className={style.hero_mask}></div>
       </header>
       <section className={style.info_container}>
         <div className={style.info_flex_container}>
@@ -45,7 +46,6 @@ const App = () => {
             {cardList.map( card => (
               <Card key={card.id} name={card.name} url={card.url} id={card.id}/>
             ))}
-            <img src={'./assets/desktop/image-curiosity.jpg'} alt="" />
           </div>
         </div>
       </section>

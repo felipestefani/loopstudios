@@ -4,12 +4,11 @@ const Card = (props) => {
 
    const { url, name, id } = props
 
-   console.log(typeof(id));
-
     return (
         <div className={style.card_container}>
-            <img src={url} alt={name} />
-            <h3>{name}</h3>
+            <img className={style.card_image} src={url} alt={name}/>
+            <div className={style.mask}></div>
+            <h3 className={`${style.card_title} ${id == 'meu4' ? style.meu4 : ''} ${id == 'meu5' ? style.meu5 : ''}`}>{name}</h3>       
         </div>
     )
 }

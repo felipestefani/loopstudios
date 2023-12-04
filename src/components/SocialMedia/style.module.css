@@ -3,3 +3,12 @@
     display: flex;
     gap: 1rem;
 }
+
+.social_img {
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem #000 solid;
+}
+
+.social_img:hover {
+    border-bottom: 0.1rem #FFF solid;
+}

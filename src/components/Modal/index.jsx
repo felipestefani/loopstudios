@@ -1,24 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import style from "./style.module.css";
-import hamburger from "../../assets/icon-hamburger.svg";
-import Modal from "../Modal";
+import logo from "../../assets/logo.svg";
+import close from "../../assets/icon-close.svg";
 
-const Menu = (props) => {
+const Modal = (props) => {
 
-    const { ehFooter } = props
+    const {ehOpen, closeModal} = props
     const [onHover, setOnOver] = useState(0)
-    const [isOpen, setIsOpen] = useState(false)
-
-    const closeModal = () => {
-        setIsOpen(false)
-    }
 
     return (
-        <div>
-            <Modal ehOpen={isOpen} closeModal={closeModal} />
-            <img src={hamburger} alt="menu hamburguer" className={`${style.hamburger} ${ehFooter ? style.Eh : ''}`} onClick={() => setIsOpen(true)}/>
-            
-            <ul className={`${style.hero_nav_list} ${!ehFooter ? '' : style.mostra }`}>
+        <div hidden={!ehOpen} className={style.modal_container}>
+            <div className={style.modal_header}>
+                <img src={logo} alt="" />
+                <img src={close} alt="" width={'25px'} height={'25px'} onClick={() => closeModal()} className={style.close}/>
+            </div>
+            <ul className={style.modal_list}>
                 <div className={`${style.menu_box} `} onMouseEnter={() => setOnOver(1)} onMouseLeave={() => setOnOver(0)}>
                     <li className={style.hero_nav_item} >About</li>
                     <div className={`${onHover == 1 ? style.underline : ''}`}></div>
@@ -42,6 +38,7 @@ const Menu = (props) => {
             </ul>
         </div>
     )
+
 }
 
-export default Menu
+export default Modal

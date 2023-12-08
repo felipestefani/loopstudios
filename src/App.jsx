@@ -55,20 +55,23 @@ const App = () => {
               <Card key={card.id} name={card.name} url={card.url} id={card.id}/>
             ))}
           </div>
+          <button className={`${style.button} ${style.button_mobile}`}>See all</button>
         </div>
       </section>
       <footer>
           <div className={style.footer_flex_container}>
             <div className={style.social_media_container}>
               <img className={style.footer_logo} src={hero_logo} alt="logo" />
-              <SocialMedia />
+              <SocialMedia ehMobile={false} />
             </div>
             <div className={style.footer_menu}>
               <Menu ehFooter={true} />
+              <SocialMedia ehMobile={true} />
               <div className={style.brand_rights}>
                 © 2021 Loopstudios. All rights reserved.
               </div>
             </div>
+            
             <div className={style.attribution}>
               Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
               Coded by <a href="#">Your Name Here</a>.

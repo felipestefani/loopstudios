@@ -114,6 +114,10 @@
   margin-bottom: 0rem;
 }
 
+.button_mobile {
+  display: none;
+}
+
 .cards_container {
   display: flex;
   flex-basis: 1110px;
@@ -189,22 +193,29 @@
     background-image: url('./assets/mobile/image-hero.jpg');
   }
 
+  .hero_logo {
+    width: 9rem;
+    height: 1.5rem;
+  }
+
   .navbar_container {
-    margin: 2.5rem 1.5rem 0rem;
+    margin: 2.5rem 0rem 0rem;
   }
 
   .h1_container {
-    margin: 10.2rem 1.5rem;
+    margin: 10.2rem 0;
   }
 
   .hero_title {
     font-size: 2.5rem;
     font-weight: 300;
     line-height: 2.375rem;
+    padding: 1.5rem;
   }
 
   .info_container {
     display: flex;
+    margin-bottom: 6rem;
   }
 
   .info_flex_container{
@@ -221,6 +232,7 @@
     padding: 0rem 2em;
     text-align: center;
     margin-top: 3rem;
+    margin-bottom: 0rem;
   }
 
   .creations_container {
@@ -229,6 +241,10 @@
 
   .creations_flex_container {
     margin: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .creations_header_container {
@@ -239,7 +255,6 @@
     display: none;
   }
 
-
   .cards_container {
     display: none;
   }
@@ -248,6 +263,32 @@
     display: block;
   }
 
-  
+  .footer_flex_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .social_media_container {
+    justify-content: center;
+  }
+
+  .footer_menu {
+    flex-direction: column;
+  }
+
+  .brand_rights {
+    text-align: center;
+    margin-top: 0rem;
+  }
+
+  .button_mobile {
+    display: block;
+    width: 9.8125rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    padding: 0;
+    margin-top: 2.13rem;
+  }
 
 }

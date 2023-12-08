@@ -12,3 +12,23 @@
 .social_img:hover {
     border-bottom: 0.1rem #FFF solid;
 }
+
+.eh_mobile {
+    display: none;
+}
+
+@media (max-width: 768px) and (min-width:325px) {
+    .social_media_list {
+        justify-content: center;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .eh_mobile {
+        display: flex;
+    }
+
+    .eh_desktop {
+        display: none;
+    }
+}

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import style from "./style.module.css";
 import logo from "../../assets/logo.svg";
 import close from "../../assets/icon-close.svg";
@@ -17,7 +17,7 @@ const Modal = (props) => {
             <ul className={style.modal_list}>
                 <div className={`${style.menu_box} `} onMouseEnter={() => setOnOver(1)} onMouseLeave={() => setOnOver(0)}>
                     <li className={style.hero_nav_item} >About</li>
-                    <div className={`${onHover == 1 ? style.underline : ''}`}></div>
+                    <div className={`${onHover == 1 ? style.underline_modal : ''}`}></div>
                 </div>
                 <div className={style.menu_box} onMouseEnter={() => setOnOver(2)} onMouseLeave={() => setOnOver(0)}>
                     <li className={style.hero_nav_item}>Careers</li>    

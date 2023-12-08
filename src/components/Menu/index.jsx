@@ -15,7 +15,7 @@ const Menu = (props) => {
 
     return (
         <div>
-            <Modal ehOpen={isOpen} closeModal={closeModal} />
+            <Modal ehOpen={isOpen} closeModal={closeModal} className={style.modal}/>
             <img src={hamburger} alt="menu hamburguer" className={`${style.hamburger} ${ehFooter ? style.Eh : ''}`} onClick={() => setIsOpen(true)}/>
             
             <ul className={`${style.hero_nav_list} ${!ehFooter ? '' : style.mostra }`}>

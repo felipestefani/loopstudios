@@ -1,9 +1,11 @@
 import style from "./style.module.css";
 import hero_logo from "./assets/logo.svg";
 import interactive from "./assets/desktop/image-interactive.jpg";
+import interactive1 from "./assets/mobile/image-interactive.jpg";
 import Menu from "./components/Menu";
 import SocialMedia from "./components/SocialMedia";
 import cardList from './data/card';
+import cardListMobile from './data/cardMobile';
 import Card from "./components/Card";
 
 const App = () => {
@@ -14,7 +16,7 @@ const App = () => {
         <div className={style.header_content}>
           <nav className={style.navbar_container}>
             <img className={style.hero_logo} src={hero_logo} alt="logo" />
-            <Menu />
+            <Menu ehFooter={false} />
           </nav>
           <div className={style.h1_container}>
             <h1 className={style.hero_title}>Immersive experiences that deliver</h1>
@@ -25,7 +27,8 @@ const App = () => {
       <section className={style.info_container}>
         <div className={style.info_flex_container}>
           <div className={style.info_img_content}>
-            <img src={interactive} alt="a man in blue t-shirt using a vr glass" />
+            <img src={interactive} alt="a man in blue t-shirt using a vr glass" className={style.desktop} />
+            <img src={interactive1} alt="a man in blue t-shirt using a vr glass" className={style.mobile} />
           </div>
           <div className={style.info_text_content}>
             <h2>The leader in interactive VR</h2>
@@ -47,6 +50,11 @@ const App = () => {
               <Card key={card.id} name={card.name} url={card.url} id={card.id}/>
             ))}
           </div>
+          <div className={style.cards_mobile_container}>
+            {cardListMobile.map( card => (
+              <Card key={card.id} name={card.name} url={card.url} id={card.id}/>
+            ))}
+          </div>
         </div>
       </section>
       <footer>
@@ -56,7 +64,7 @@ const App = () => {
               <SocialMedia />
             </div>
             <div className={style.footer_menu}>
-              <Menu />
+              <Menu ehFooter={true} />
               <div className={style.brand_rights}>
                 © 2021 Loopstudios. All rights reserved.
               </div>

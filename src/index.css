@@ -46,3 +46,17 @@ footer {
   justify-content: center;
   margin-top: 11.5rem;
 }
+
+@media (max-width: 768px) and (min-width:325px) {
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2rem;
+  }
+
+  p{
+    padding: 0 1rem;
+  }
+
+}
